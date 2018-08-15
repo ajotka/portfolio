@@ -1,0 +1,30 @@
+.roles {
+    height: 30px;
+    line-height: 40px;
+    vertical-align: middle;
+    overflow: hidden;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+
+    div {
+        height: 30px;
+        transition: margin-top 1s ease-in-out;
+
+        span {
+            position: relative;
+            z-index: 0;
+
+            &:after {
+                content: '';
+                background: rgba(255, 0, 125, 0.5);
+                width: 70px;
+                height: 7px;
+                display: block;
+                position: absolute;
+                bottom: 2px;
+                left: 10px;
+                z-index: -1;
+            }
+        }
+    }
+}

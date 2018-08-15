@@ -1,0 +1,39 @@
+.header__logo {
+    width: 350px;
+    height: 350px;
+    top: calc(50% - 175px);
+    left: calc(50% - 175px);
+    position: absolute;
+
+    &-image {
+        background: url('../img/ajotka_logo_balck.png');
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        z-index: -1;
+    }
+
+    &-name {
+        font-size: 2.8125em;
+        letter-spacing: 5px;
+        margin-top: -15px;
+        margin-bottom: 13px;
+        color: #ffffff;
+        font-weight: 100;
+        text-shadow: #000 0 1px 1px, #000 0 -1px 1px;
+        text-align: center;
+    }
+
+    &-subname {
+        color: #8d8d8d;
+        margin-top: 9px;
+        font-weight: normal;
+        font-size: 11px;
+        font-family: "Lato", sans-serif;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+}

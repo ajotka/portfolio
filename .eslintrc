@@ -1,0 +1,26 @@
+{
+    "extends": "airbnb",
+    "env": {
+        "browser": true
+    },
+    "plugins": [
+        "babel"
+    ],
+    "parser": "babel-eslint",
+    "settings": {
+        "import/resolve": {
+            "moduleDirectory": [
+                "node_modules",
+                "src"
+            ]
+        }
+    },
+    "rules": {
+        "strict": 0,
+        "indent": ["error", 4],
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-one-expression-per-line": 0,
+        "react/prop-types": 0,
+        "babel/semi": 1
+    }
+}

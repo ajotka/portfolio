@@ -1,0 +1,21 @@
+{
+    "short_name": "AJOTKA",
+    "name": "AJOTKA Agata Dobrowolska",
+    "icons": [
+        {
+            "src": "/img/favicon.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/img/favicon.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#000000",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#000000"
+}

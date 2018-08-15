@@ -1,0 +1,15 @@
+@include rwdmax(medium) {
+	.sm-12 {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.sm-10 {
+		width: 83%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

@@ -1,0 +1,20 @@
+.image_title {
+    background: rgba(0,0,0,0.75);
+    position: absolute;
+    left: -160px;
+    top: 160px;
+    width: 400px;
+    height: 80px;
+    line-height: 45px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transform: rotate(90deg);
+}
+
+.image_title a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 16px;
+}

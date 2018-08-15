@@ -1,0 +1,8 @@
+.about-area {
+    background: #fff;
+    padding: 100px 0px 50px;
+    color: #000;
+    @include rwd(small) {
+	padding: 100px 0px 100px;
+    }
+}

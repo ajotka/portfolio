@@ -1,0 +1,26 @@
+## General
+.cvs
+.htaccess
+.svn
+*.bak
+*.swp
+.idea
+.history
+.vscode
+
+## Windows
+Desktop.ini
+Thumbs.db
+
+## Mac
+.DS_Store
+
+
+## Development
+.sass-cache
+node_modules
+public/css/
+public/fonts/
+public/js/
+public/img/
+src/js/temp/

@@ -1,0 +1,21 @@
+footer {
+	position: relative;
+    padding: 15px;
+}
+
+footer:before {
+    content: '';
+    width: 30%;
+    height: 50px;
+    border-top: 2px dotted #000;
+    position: absolute;
+    left: 0;
+    bottom: 18px;
+    transform: rotate(5deg);
+}
+
+footer .container {
+	justify-content: space-between;
+    width: 100%;
+    display: flex;
+}

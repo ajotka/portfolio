@@ -1,0 +1,56 @@
+.separator {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    overflow: hidden;
+    
+    svg {
+	fill: #fff;
+    }
+}
+
+section.separate {
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.diagonalseparator {
+	width: 100%;
+  position: relative;
+  background: transparent;
+  margin-top: 110px;
+  padding: 40px;
+
+  @include rwd(small) {
+    margin-top: 155px;
+    padding: 20px;
+  }
+}
+
+.diagonalseparator::before {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  top: -370%;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 335%;
+  background: #fff;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.flip {
+	-moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}

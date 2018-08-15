@@ -1,0 +1,27 @@
+.socials {
+	display: flex;
+    align-items: center;
+}
+
+.socials .icon {
+    color: #fff;
+    padding: 0 5px;
+}
+
+.socials .icon-mail {
+    font-size: 25px;
+}
+
+.social-link {
+	display: flex;
+    align-items: baseline;
+}
+
+.social-link h5 {
+	padding: 0 5px 0 0;
+}
+
+.social-link .icon {
+    padding: 0 5px;
+    font-size: small;
+}

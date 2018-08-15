@@ -1,0 +1,9 @@
+/*
+p
+ */
+
+span, p {
+    @include rwdmax(small) {
+    	text-align: justify;
+    }
+}
