@@ -14,7 +14,7 @@ class ScrollMenu {
 					    });
     	// Bind click handler to menu items
 		// so we can get a fancy scroll animation
-		$(navItems).click( function(e) {
+		$('.lazy-scroll').click( function(e) {
 			var href = $(this).attr("href"),
 		    offsetTop = href === "#" ? 0 : $(href).offset().top - 100;
 			$('html, body').stop().animate({ 
