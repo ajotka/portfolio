@@ -1,8 +1,51 @@
-.about-area {
+.about {
     background: #fff;
     padding: 100px 0px 50px;
     color: #000;
     @include rwd(small) {
-	padding: 100px 0px 100px;
+		padding: 100px 0px 100px;
     }
+
+	&__portret {
+		width: 29%;
+	    position: relative;
+	    z-index: 1;
+	    box-shadow: 0px 0px 21px rgba(0,0,0,0.3);
+	    background-color: #000;
+
+		&:before {
+		    content: '';
+		    position: absolute;
+		    right: 3%;
+		    bottom: 2%;
+		    border: 2px dotted rgba(255, 255, 255, 0.3);
+		    height: 95%;
+		    width: 93%;
+		    z-index: 1;
+
+			@include rwd(small) {
+			    right: -45px;
+			    bottom: -45px;
+			    border: 2px dotted rgba(50, 50, 50, 0.3);
+			    height: 100%;
+			    width: 100%;
+			    z-index: -1;
+			}
+		}
+
+		img {
+		    overflow: hidden;
+		    max-width: 100%;
+		    margin-bottom: -3px;
+		}
+	}
+
+	&__content {
+		width: 55%;
+		margin-left: 16%;
+
+	    @include rwdmax(medium) {
+	        margin-top: 50px;
+	    }
+	}
 }

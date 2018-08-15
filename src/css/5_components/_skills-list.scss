@@ -1,4 +1,4 @@
-#techList {
+.skills__list {
 	position: relative;
 	list-style: none;
 	padding: 0;
@@ -15,13 +15,13 @@
     height: 400px;
     font-size: 100%;
   }
-}
 
-#techList li {
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-shadow: 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0.5px 0.5px 0px rgba(0, 0, 0, 0.25);
+  li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-shadow: 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0.5px 0.5px 0px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .html5 {
