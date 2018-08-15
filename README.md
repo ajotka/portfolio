@@ -5,8 +5,6 @@
 - Poprawić optymalizację zdjęć i fontów - nazwy wyjściowe plików
 - Refaktoryzacja css
 - RWD na tablety
-- Skrypt do śledzenia sekcji w menu
-- Płynne przewijanie po kliknięciu 'about'
 - Text Lorem Ipsum
 - Podlinkować portfolio
 
