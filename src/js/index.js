@@ -2,6 +2,7 @@ import $ from 'jquery';
 
 import Menu from './components/menu';
 import Roles from './components/roles';
+import ScrollMenu from './components/scroll-menu';
 import Test from './components/test';
 
 $(document).ready(() => {
@@ -12,4 +13,7 @@ $(document).ready(() => {
 
     const roles = new Roles($('.roles'));
     roles.init();
+
+    const nav = new ScrollMenu($('#nav'));
+    nav.init();
 });
