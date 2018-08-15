@@ -21,8 +21,6 @@ class Roles {
     }
 
     init() {
-        console.log('Roles init');
-
         this.events();
     }
 }

@@ -23,8 +23,6 @@ class Menu {
     }
 
     init() {
-        console.log('Menu init');
-
         this.events();
     }
 }
