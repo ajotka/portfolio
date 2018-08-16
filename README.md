@@ -1,12 +1,10 @@
 # Portfolio
 
 ## TODO:
-- Poprawić gulpfile - builduje w złym miejscu
-- Poprawić optymalizację zdjęć i fontów - nazwy wyjściowe plików
+- Poprawić optymalizację zdjęć i fontów - nazwy wyjściowe plików + optymalizacja obrazów niezałączonych
 - Refaktoryzacja css
 - RWD na tablety
-- Text Lorem Ipsum
-- Podlinkować portfolio
+- Firefox fixes
 
 ## How to run? - NPM, Gulp, Webpack, Yarn and others...
 ### Uruchamianie projektu (wersja developerska)
