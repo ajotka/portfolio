@@ -9,7 +9,9 @@
   height: 280px;
   margin: -30px auto 0;
   overflow: hidden;
-
+  @media (max-width: 420px) {
+    font-size: 115%;
+  }
   @include rwd(small) {
     width: 600px;
     height: 400px;

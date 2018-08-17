@@ -1,5 +1,5 @@
 .header__menu-button {
-    position: fixed;
+    position: absolute;
     top: 30px;
     right: 15px;
     @include rwd(small) {
