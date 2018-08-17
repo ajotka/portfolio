@@ -4,7 +4,6 @@
 - Poprawić optymalizację zdjęć i fontów - nazwy wyjściowe plików + optymalizacja obrazów niezałączonych
 - Refaktoryzacja css
 - RWD na tablety
-- Firefox fixes
 
 ## How to run? - NPM, Gulp, Webpack, Yarn and others...
 ### Uruchamianie projektu (wersja developerska)
