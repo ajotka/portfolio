@@ -1,0 +1,36 @@
+$font-pixels-base: 16px;
+$font-base: 1em;
+$font-small: 0.875rem;
+$font-normal: 1.125rem;
+$font-medium: 1.65rem;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+$line-height-normal: 1;
+$line-height-medium: 1.25;
+$line-height-large: 1.36;
+
+// Paddings & Margins
+$spacer: 30px;
+$spacer-one-fourth: $spacer * 0.25;
+$spacer-one-third: $spacer * 0.33;
+$spacer-half: $spacer * 0.5;
+$spacer-two-third: $spacer * 0.66;
+$spacer-double: $spacer * 2;
+$spacer-triple: $spacer * 3;
+$spacer-quadruple: $spacer * 4;
+$spacer-xxsmall: 1rem;    // 16px
+$spacer-xsmall: 1.5rem;     // 24px
+$spacer-small: 2rem;      // 32px
+$spacer: 2.5rem;            // 40px
+$spacer-medium: 3rem;     // 48px
+$spacer-large: 3.5rem;      // 56px
+$spacer-xlarge: 4rem;     // 64px
+$spacer-xxlarge: 4.5rem;    // 72px
+
+// Container
+$content-width: 1124px;
+$content-width-wide: 1440px;
+$content-width-full: 100%;
+$columns: 12;

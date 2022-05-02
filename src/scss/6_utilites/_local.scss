@@ -1,0 +1,50 @@
+/* stylelint-disable selector-max-id */
+
+.local-grid {
+  @extend %row;
+  @extend %columns-12;
+  @extend %columns-tablet-8;
+  @extend %columns-mobile-4;
+  @extend %container;
+  @extend %container--wide;
+
+  div {
+    padding: 0.5em;
+    background: rgba(237, 28, 79, 12%);
+    color: rgba(237, 28, 79, 60%);
+    height: 100vh;
+    pointer-events: none;
+  }
+
+  #col-9,
+  #col-10,
+  #col-11,
+  #col-12 {
+    @include rwdmax(desktop) {
+      display: none;
+    }
+  }
+
+  #col-5,
+  #col-6,
+  #col-7,
+  #col-8,
+  #col-9,
+  #col-10,
+  #col-11,
+  #col-12 {
+    @include rwdmax(tablet) {
+      display: none;
+    }
+  }
+}
+
+.local-overlay {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 1002;
+}

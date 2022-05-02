@@ -1,0 +1,26 @@
+$margins: "margin","margin-top", "margin-bottom", "margin-right", "margin-left";
+$paddings: "padding","padding-top", "padding-bottom", "padding-right", "padding-left";
+$sizes: (
+  "xsmall": $spacer-one-third,
+  "small": $spacer-half,
+  "medium": $spacer,
+  "large": $spacer-double,
+  "xlarge": $spacer-triple,
+  "xxlarge": $spacer-quadruple,
+);
+
+@each $margin in $margins {
+  @each $sizeName, $size in $sizes {
+    .u-#{$margin}-#{$sizeName} {
+      #{$margin}: $size;
+    }
+  }
+}
+
+@each $padding in $paddings {
+  @each $sizeName, $size in $sizes {
+    .u-#{$padding}-#{$sizeName} {
+      #{$padding}: $size;
+    }
+  }
+}

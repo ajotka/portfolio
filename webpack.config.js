@@ -1,84 +1,77 @@
-const magicImporter = require('node-sass-magic-importer');
-const convert = require('koa-connect');
-const proxy = require('http-proxy-middleware');
-const path = require('path');
+const { merge } = require("webpack-merge");
+const path = require("path");
+const _ = require("lodash");
 
-const IS_PROD = process.env.NODE_ENV === 'production';
+// Configuration files
+const webpack_base = require("./webpack-configs/webpack.base");
+const styles = require("./webpack-configs/styles");
+const svg = require("./webpack-configs/svg");
+const utils = require("./webpack-configs/utils");
 
-module.exports = {
-    mode: IS_PROD ? 'production' : 'development',
-
-    output: {
-        path: path.resolve(__dirname, 'public'),
-        filename: 'main.js',
+// Default options for all configuration files
+// key name is equal to configuration export name
+const defaultOptions = {
+    styles: {
+        extractToFile: false,
+        postcss: true,
+        scss: true,
     },
-
-    resolve: {
-        extensions: ['.web.js', '.mjs', '.js', '.json', '.jsx'],
-        modules: [path.resolve(__dirname, 'src'), 'node_modules'],
-	    alias: {
-	      'webpack-hot-client/client': path.resolve(__dirname, 'src'),
-	    },
+    svg: {
+        src: path.resolve(__dirname, 'src/icons'),
+        outputPath: '/',
+        publicPath: '/',
     },
-
-    module: {
-        rules: [{
-            test: /\.jsx?$/,
-            exclude: /node_modules/,
-            loader: 'babel-loader',
-        },
-        {
-            test: /\.scss$/,
-            use: [
-                'style-loader',
-                'css-loader',
-                {
-                    loader: 'sass-loader',
-                    options: { importer: magicImporter() },
-                },
-            ],
-        },
-        {
-            test: /\.(gif|png|jpe?g|svg)$/i,
-            use: [
-                'file-loader?name=./img/[hash].[ext]',
-                {
-                    loader: 'image-webpack-loader',
-                    options: { disable: !IS_PROD },
-                },
-            ],
-        },
-        {
-            test: /\.(woff|woff2|eot|ttf|svg)$/i,
-            use: [
-                {
-                    loader: 'url-loader',
-                    options: {
-                    	limit: 8000
-                    }
-                },
-            ],
-        }],
-    },
-
-    serve: {
-        content: 'public',
-        clipboard: false,
-        open: true,
-        port: 4000,
-        add: (app, middleware) => {
-            middleware.webpack().then(() => {
-                middleware.content().then(() => {
-                    app.use(
-                        convert(
-                            proxy('/', {
-                                target: 'http://localhost:4000',
-                                changeOrigin: true,
-                            }),
-                        ),
-                    );
-                });
-            });
-        },
+    utils: {
+        browserSync: false,
+        jquery: 'internal',
     },
 };
+
+// Merge all configs into one
+// - Order is important!
+// - Your custom config should be in 'userConfig' as param
+// - If you want to add another generic config, look ./configs/example.js
+function config(mode, userConfig) {
+    return merge(
+        webpack_base.baseConfig,
+        { mode },
+        svg.svg(defaultOptions),
+        styles.styles(defaultOptions, mode),
+        utils.utils(defaultOptions),
+        userConfig
+    );
+}
+
+module.exports = (env, argv) => {
+    const mode = _.get(argv, 'mode', 'development');
+    return config(mode, {
+        output: {
+            path: path.resolve(__dirname, 'public'),
+            filename: 'main.js',
+        },
+
+        resolve: {
+            alias: {
+                vue$: 'vue/dist/vue.esm.js',
+            },
+            extensions: ['.web.js', '.mjs', '.js', '.json', '.jsx', '.vue'],
+            modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+        },
+
+        devServer: {
+            contentBase: path.join(__dirname, 'public'),
+            historyApiFallback: true,
+            hot: true,
+            port: 3000,
+            host: '0.0.0.0',
+            disableHostCheck: true,
+        },
+
+        devtool: (mode === 'development') ? 'source-map' : false,
+
+        // Here you can extend config in a classic way
+        module: {
+            rules: [],
+        },
+    });
+}

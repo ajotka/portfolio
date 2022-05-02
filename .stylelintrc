@@ -1,8 +1,13 @@
 {
+  "extends": ["stylelint-config-standard-scss"],
   "plugins": [
+    "stylelint-scss",
     "stylelint-selector-bem-pattern"
   ],
   "rules": {
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "scss/percent-placeholder-pattern": null,
     "plugin/selector-bem-pattern": {
       "componentName": "[A-Z]+",
       "componentSelectors": {
@@ -11,21 +16,22 @@
       },
       "utilitySelectors": "^\\.util-[a-z]+$"
     },
-    "max-nesting-depth": [ 1, {
+    "max-nesting-depth": [ 5, {
       ignore: ["blockless-at-rules"],
       ignoreAtRules: ["/^include/", "media"]
     }],
     "selector-max-id": 0,
-    "color-named": "never",
     "shorthand-property-no-redundant-values": true,
     "declaration-block-no-redundant-longhand-properties": true,
     "no-unknown-animations": true,
-    "function-url-scheme-blacklist": ["/^http/"],
+    "function-url-scheme-disallowed-list": ["ftp", "/^http/"],
     "selector-max-class": 3,
-    "declaration-property-value-blacklist": {
-      "transition": ["/^all/"]
-    },
     "selector-max-universal": 0,
-    "selector-max-type": 1
+    "selector-max-type": [ 1, {
+      ignore: ["child", "compounded", "descendant", "next-sibling"]
+    }],
+    "block-no-empty": null,
+    "color-function-notation": "legacy",
+    "color-named": "never"
   }
 }

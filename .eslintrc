@@ -1,12 +1,13 @@
 {
-    "extends": "airbnb",
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "requireConfigFile": false
+    },
+    "extends": "airbnb-base",
     "env": {
         "browser": true
     },
-    "plugins": [
-        "babel"
-    ],
-    "parser": "babel-eslint",
     "settings": {
         "import/resolve": {
             "moduleDirectory": [
@@ -16,11 +17,9 @@
         }
     },
     "rules": {
-        "strict": 0,
+        "no-console": "warn",
+        "no-debugger": "warn",
         "indent": ["error", 4],
-        "react/jsx-indent": ["error", 4],
-        "react/jsx-one-expression-per-line": 0,
-        "react/prop-types": 0,
-        "babel/semi": 1
+        "class-methods-use-this": "warn"
     }
 }

@@ -1,0 +1,31 @@
+%column-gap {
+  @include rwd(phone) {
+    &.column-gap-none {
+      column-gap: 0;
+    }
+
+    &.column-gap-xsmall {
+      column-gap: $spacer-one-fourth;
+    }
+
+    &.column-gap-small {
+      column-gap: $spacer-half;
+    }
+
+    &.column-gap-medium {
+      column-gap: $spacer;
+    }
+
+    &.column-gap-large {
+      column-gap: $spacer-double;
+    }
+
+    &.column-gap-xlarge {
+      column-gap: $spacer-triple;
+    }
+
+    &.column-gap-xxlarge {
+      column-gap: $spacer-quadruple;
+    }
+  }
+}

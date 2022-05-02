@@ -1,0 +1,30 @@
+/* ------------------------------------------
+Standard Breakpoints
+------------------------------------------ */
+
+/* stylelint-disable max-line-length */
+
+$breakpoint-phone: 360px;
+$breakpoint-tablet: 834px;
+$breakpoint-desktop: 1440px;
+$breakpoint-full: 1920px;
+$breakpoint-4k: 3840px;
+$breakpoint-8k: 7680px;
+$breakpoints-min: (
+  "phone":	( min-width:  $breakpoint-phone),
+  "tablet":	( min-width:  $breakpoint-tablet),
+  "desktop":	( min-width:  $breakpoint-desktop),
+  "full":		( min-width:  $breakpoint-full),
+  "4k":		( min-width:  $breakpoint-4k),
+  "8k":		( min-width:  $breakpoint-8k),
+  "retina":       "screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx)"
+) !default;
+$breakpoints-max: (
+  "phone":	( max-width:  $breakpoint-phone - 1),
+  "tablet":	( max-width:  $breakpoint-tablet - 1),
+  "desktop":	( max-width:  $breakpoint-desktop - 1),
+  "full":		( max-width:  $breakpoint-full - 1),
+  "4k":		( max-width:  $breakpoint-4k - 1),
+  "8k":		( max-width:  $breakpoint-8k - 1),
+  "retina":       "screen and (-webkit-max-device-pixel-ratio: 2), screen and (max-resolution: 192dpi), screen and (max-resolution: 2dppx)"
+) !default;
