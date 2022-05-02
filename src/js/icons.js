@@ -5,12 +5,8 @@
 
 /* eslint-disable no-unused-vars */
 
-import frontkom from '../icons/frontkom.svg';
-
-//
-// Example for custom inline usage:
-//
-// const rendered = `
-// <svg viewBox="${frontkom.viewBox}">
-//   <use xlink:href="#${frontkom.id}" />
-// </svg>`;
+import angleLeft from '../icons/angle-left.svg';
+import github from '../icons/github.svg';
+import instagram from '../icons/instagram.svg';
+import linkedin from '../icons/linkedin.svg';
+import mail from '../icons/mail.svg';

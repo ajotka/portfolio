@@ -4,6 +4,7 @@
 .svn
 *.bak
 *.swp
+*.txt
 .idea
 .history
 .vscode
@@ -15,13 +16,14 @@ Thumbs.db
 ## Mac
 .DS_Store
 
-
 ## Development
 .sass-cache
 node_modules
+
 public/css/
 public/fonts/
 public/js/
 public/img/
+
 src/js/temp/
 src/fonts/iconfont.svg
