@@ -4,7 +4,7 @@
 	padding: 0;
 	font-size: 125%;
   text-transform: uppercase;
-  color: $dark-color;
+  color: $color-text-dark;
   width: 400px;
   height: 280px;
   margin: -30px auto 0;
@@ -25,7 +25,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    text-shadow: 0.5px 0.5px 0px rgba($dark-color, 0.15), 0.5px 0.5px 0px rgba($dark-color, 0.25);
+    text-shadow: 0.5px 0.5px 0px rgba($color-text-dark, 0.15), 0.5px 0.5px 0px rgba($color-text-dark, 0.25);
   }
 }
 
@@ -163,7 +163,7 @@
 }
 
 .jg {
-	color: $pink;
+	color: $color-pink;
 	font-weight: 700;
 	letter-spacing: -.03em;
 	transform: 
@@ -172,7 +172,7 @@
 }
 
 .skill {
-  color: $blue;
+  color: $color-blue;
   font-weight: 700;
   letter-spacing: -.03em;
   transform: 

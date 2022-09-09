@@ -4,16 +4,16 @@ a:hover
  */
 
 a {
-  color: $color-link;
+  color: $color-pink-dark;
 
   &:visited {
-    color: $color-link;
+    color: $color-pink-dark;
   }
 
   &:hover,
   &:focus,
   &:active {
-    color: $color-text;
+    color: $color-text-base;
   }
 
   &:focus {

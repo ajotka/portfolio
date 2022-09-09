@@ -1,5 +1,5 @@
 .image_title {
-    background: rgba($dark-color, 0.75);
+    background: rgba($color-bg-dark, 0.75);
     position: absolute;
     left: -160px;
     top: 160px;
@@ -13,7 +13,7 @@
 
 .image_title a {
   display: block;
-  color: $light-color;
+  color: $color-text-light;
   text-decoration: none;
   padding: 20px;
   font-size: 16px;

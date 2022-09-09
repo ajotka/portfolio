@@ -6,7 +6,7 @@
     overflow: hidden;
     
     svg {
-	fill: $light-color;
+	fill: $color-bg-light;
     }
 }
 
@@ -39,7 +39,7 @@ section.separate {
   z-index: -1;
   width: 150%;
   height: 335%;
-  background: #fff;
+  background: $color-bg-light;
   -webkit-transform: rotate(-4deg);
   transform: rotate(-4deg);
   -webkit-transform-origin: 0 0;

@@ -3,7 +3,7 @@
   align-items: center;
 
   &__icon {
-    fill: $light-color;
+    fill: $color-text-light;
     padding: 0 5px;
     width: 1.5em;
     height: 1.5em;
@@ -21,7 +21,7 @@
 }
 
 .social-link__icon {
-  fill: $text-light-color;
+  fill: $color-text-dark;
   padding: 0 5px;
   width: 1em;
   height: 1em;

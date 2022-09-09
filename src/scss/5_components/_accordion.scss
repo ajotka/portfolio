@@ -49,7 +49,7 @@
   }
 
   &__item-title {
-    background: rgba(0,0,0,0.75);
+    background: rgba($color-bg-dark,0.75);
     position: absolute;
     left: -175px;
     top: 175px;
@@ -68,7 +68,7 @@
  
     a {
       display: block;
-      color: $light-color;
+      color: $color-text-light;
       text-decoration: none;
       padding: 20px;
       font-size: 16px;
