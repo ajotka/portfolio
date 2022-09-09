@@ -16,7 +16,7 @@
     font-size: 115%;
   }
   @include rwd(small) {
-    width: 600px;
+    width: 610px;
     height: 400px;
     font-size: 100%;
   }
@@ -183,7 +183,7 @@
 
 
 
-@include rwdmax(medium) {
+@include rwdmax(tablet) {
   .html5 {
     transform: 
       scale(3.5, 3.5)

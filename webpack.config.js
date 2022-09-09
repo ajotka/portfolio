@@ -1,6 +1,7 @@
 const { merge } = require("webpack-merge");
 const path = require("path");
 const _ = require("lodash");
+const CopyPlugin = require('copy-webpack-plugin');
 
 // Configuration files
 const webpack_base = require("./webpack-configs/webpack.base");
@@ -48,6 +49,7 @@ module.exports = (env, argv) => {
         output: {
             path: path.resolve(__dirname, 'public'),
             filename: 'main.js',
+            assetModuleFilename: 'assets/[name][ext][query]',
         },
 
         resolve: {
@@ -59,12 +61,14 @@ module.exports = (env, argv) => {
         },
 
         devServer: {
-            contentBase: path.join(__dirname, 'public'),
+            allowedHosts: "all",
             historyApiFallback: true,
+            host: '0.0.0.0',
             hot: true,
             port: 3000,
-            host: '0.0.0.0',
-            disableHostCheck: true,
+            static: {
+                directory: path.join(__dirname, 'public'),
+            },
         },
 
         devtool: (mode === 'development') ? 'source-map' : false,
@@ -73,5 +77,21 @@ module.exports = (env, argv) => {
         module: {
             rules: [],
         },
+
+        plugins: [
+            new CopyPlugin({
+                patterns: [
+                    {
+                        from: path.resolve(__dirname, 'src/img'),
+                        to: path.resolve(__dirname, 'public/img'),
+                    },
+                    {
+                        from: path.resolve(__dirname, 'src/public'),
+                        to: path.resolve(__dirname, 'public'),
+                    },
+                ],
+            }),
+        ],
+
     });
 }

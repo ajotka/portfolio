@@ -20,13 +20,13 @@
       	text-decoration: none;
     
         &:before {
-            content: '\e900';
+            content: '';
+            background-image: url("../../icons/angle-left.svg?inline&fill=#b1acac");
             position: absolute;
             bottom: -5px;
             left: -20px;
-            font-family: icomoon;
-            font-size: 20px;
-            color: #b1acac;
+            width: 20px;
+            height: 20px;
             -webkit-animation: secdownmoving 1000ms linear 0s infinite;
             -o-animation: secdownmoving 1000ms linear 0s infinite;
             animation: secdownmoving 1000ms linear 0s infinite;

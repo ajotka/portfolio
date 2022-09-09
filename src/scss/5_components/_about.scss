@@ -44,7 +44,7 @@
 		width: 55%;
 		margin-left: 16%;
 
-	    @include rwdmax(medium) {
+	    @include rwdmax(tablet) {
 	        margin-top: 50px;
 	    }
 	}

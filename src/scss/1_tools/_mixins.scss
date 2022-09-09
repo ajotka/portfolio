@@ -24,7 +24,7 @@ Breakpoint
 }
 
 /// @param {String} $name - Breakpoint name
-/// @require $breakpoints-mmax
+/// @require $breakpoints-max
 
 @mixin rwdmax($name) {
   // If the key exists in the map
@@ -38,7 +38,7 @@ Breakpoint
   // If the key doesn't exist in the map
   @else {
     @warn "Unfortunately, no value could be retrieved from `#{$name}`. "
-      + "Available breakpoints-mmax are: #{map-keys($breakpoints-mmax)}.";
+      + "Available breakpoints-max are: #{map-keys($breakpoints-max)}.";
   }
 }
 

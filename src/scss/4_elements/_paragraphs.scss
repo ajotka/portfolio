@@ -1,3 +1,10 @@
 /*
 p, dfn, cite, em, i, pre, code
  */
+
+span,
+p {
+  @include rwdmax(small) {
+    text-align: justify;
+  }
+}

@@ -1,0 +1,28 @@
+.socials {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    fill: #fff;
+    padding: 0 5px;
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+
+.social-link {
+	display: flex;
+    align-items: baseline;
+}
+
+.social-link span {
+	padding: 0 5px 0 0;
+    font-weight: bold;
+}
+
+.social-link__icon {
+  fill: $text-light-color;
+  padding: 0 5px;
+  width: 1em;
+  height: 1em;
+}

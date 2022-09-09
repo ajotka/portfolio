@@ -6,10 +6,8 @@
     position: absolute;
 
     &-image {
-        background: url('../img/ajotka_logo_balck.png');
+        object-fit: cover;
         position: relative;
-        background-repeat: no-repeat;
-        background-size: cover;
         width: 200px;
         height: 200px;
         margin: 0 auto;

@@ -4,14 +4,20 @@ Standard Breakpoints
 
 /* stylelint-disable max-line-length */
 
+//$rwd-small: 768px;
+//$rwd-medium: 992px;
+//$rwd-large: 1200px;
+
 $breakpoint-phone: 360px;
-$breakpoint-tablet: 834px;
+$breakpoint-small: 768px;
+$breakpoint-tablet: 992px;
 $breakpoint-desktop: 1440px;
 $breakpoint-full: 1920px;
 $breakpoint-4k: 3840px;
 $breakpoint-8k: 7680px;
 $breakpoints-min: (
   "phone":	( min-width:  $breakpoint-phone),
+  "small":	( min-width:  $breakpoint-small),
   "tablet":	( min-width:  $breakpoint-tablet),
   "desktop":	( min-width:  $breakpoint-desktop),
   "full":		( min-width:  $breakpoint-full),
@@ -21,6 +27,7 @@ $breakpoints-min: (
 ) !default;
 $breakpoints-max: (
   "phone":	( max-width:  $breakpoint-phone - 1),
+  "small":	( max-width:  $breakpoint-small - 1),
   "tablet":	( max-width:  $breakpoint-tablet - 1),
   "desktop":	( max-width:  $breakpoint-desktop - 1),
   "full":		( max-width:  $breakpoint-full - 1),
