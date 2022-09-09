@@ -13,16 +13,16 @@
 .social-link {
   display: flex;
   align-items: baseline;
+
+  &__icon {
+    fill: $color-text-dark;
+    padding: 0 5px;
+    width: 1em;
+    height: 1em;
+  }
 }
 
 .social-link span {
   padding: 0 5px 0 0;
   font-weight: bold;
-}
-
-.social-link__icon {
-  fill: $color-text-dark;
-  padding: 0 5px;
-  width: 1em;
-  height: 1em;
 }

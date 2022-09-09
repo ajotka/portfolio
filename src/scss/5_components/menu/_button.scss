@@ -1,4 +1,4 @@
-.header__menu-button {
+.menu-button {
   position: absolute;
   top: 30px;
   right: 15px;
@@ -15,7 +15,7 @@
   margin-top: -10px;
   padding: 10px 10px 10px 0;
 
-  .menu-button__line {
+  &__line {
     display: block;
     height: 1px;
     width: 100%;
@@ -40,9 +40,9 @@
     &:nth-of-type(4) {
       width: 63.07%;
     }
-  }
 
-  &:hover .menu-button__line {
-    width: 63.07%;
+    .menu-button:hover & {
+      width: 63.07%;
+    }
   }
 }

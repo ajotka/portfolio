@@ -1,37 +1,39 @@
-.header__logo {
-  width: 350px;
-  height: 350px;
-  top: calc(50% - 175px);
-  left: calc(50% - 175px);
-  position: absolute;
+.header {
+  &__logo {
+    width: 350px;
+    height: 350px;
+    top: calc(50% - 175px);
+    left: calc(50% - 175px);
+    position: absolute;
 
-  &-image {
-    object-fit: cover;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    z-index: -1;
-  }
+    &-image {
+      object-fit: cover;
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      z-index: -1;
+    }
 
-  &-name {
-    font-size: 2.8125em;
-    letter-spacing: 5px;
-    margin-top: -15px;
-    margin-bottom: 13px;
-    color: $color-text-light;
-    font-weight: 300;
-    text-shadow: $color-text-dark 0 1px 1px, $color-text-dark 0 -1px 1px;
-    text-align: center;
-  }
+    &-name {
+      font-size: 2.8125em;
+      letter-spacing: 5px;
+      margin-top: -15px;
+      margin-bottom: 13px;
+      color: $color-text-light;
+      font-weight: 300;
+      text-shadow: $color-text-dark 0 1px 1px, $color-text-dark 0 -1px 1px;
+      text-align: center;
+    }
 
-  &-subname {
-    color: $color-subtext;
-    margin-top: 9px;
-    font-weight: normal;
-    font-size: 12px;
-    font-family: Lato, sans-serif;
-    letter-spacing: 3px;
-    text-align: center;
+    &-subname {
+      color: $color-subtext;
+      margin-top: 9px;
+      font-weight: normal;
+      font-size: 12px;
+      font-family: Lato, sans-serif;
+      letter-spacing: 3px;
+      text-align: center;
+    }
   }
 }

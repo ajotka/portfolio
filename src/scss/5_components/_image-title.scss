@@ -1,4 +1,4 @@
-.image_title {
+.image-title {
   background: rgba($color-bg-dark, 0.75);
   position: absolute;
   left: -160px;
@@ -11,7 +11,7 @@
   transform: rotate(90deg);
 }
 
-.image_title a {
+.image-title a {
   display: block;
   color: $color-text-light;
   text-decoration: none;

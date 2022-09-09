@@ -1,46 +1,42 @@
-.skills__list {
-  position: relative;
-  list-style: none;
-  padding: 0;
-  font-size: 125%;
-  text-transform: uppercase;
-  color: $color-text-dark;
-  width: 400px;
-  height: 280px;
-  margin: -30px auto 0;
-  overflow: hidden;
+.skills {
+  &__list {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    font-size: 125%;
+    text-transform: uppercase;
+    color: $color-text-dark;
+    width: 400px;
+    height: 280px;
+    margin: -30px auto 0;
+    overflow: hidden;
 
-  @media (max-width: 360px) {
-    font-size: 110%;
-  }
+    @media (max-width: 360px) {
+      font-size: 110%;
+    }
 
-  @media (min-width: 361px) and (max-width: 420px) {
-    font-size: 115%;
-  }
+    @media (min-width: 361px) and (max-width: 420px) {
+      font-size: 115%;
+    }
 
-  @include rwd(small) {
-    width: 610px;
-    height: 400px;
-    font-size: 100%;
-  }
+    @include rwd(small) {
+      width: 610px;
+      height: 400px;
+      font-size: 100%;
+    }
 
-  li {
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-shadow: 0.5px 0.5px 0 rgba($color-text-dark, 0.15), 0.5px 0.5px 0 rgba($color-text-dark, 0.25);
+    li {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-shadow: 0.5px 0.5px 0 rgba($color-text-dark, 0.15), 0.5px 0.5px 0 rgba($color-text-dark, 0.25);
+    }
   }
 }
 
 .html5 {
   font-weight: 700;
   letter-spacing: -0.05em;
-  transform:
-    scale(7, 7)
-    translate(1.3em, 0.68em);
-  transform:
-    scale(6.5, 7)
-    translate(1.4em, 0.68em);
   transform:
     scale(6.5, 7)
     translate(1.4em, 0.68em);
@@ -123,7 +119,7 @@
     translate(5.62em, 3.9em);
 }
 
-.objectoriented {
+.object-oriented {
   font-weight: 700;
   letter-spacing: -0.01em;
   transform:
@@ -147,7 +143,7 @@
     translate(6.9em, 0.9em);
 }
 
-.crossbrowser {
+.cross-browser {
   font-weight: 300;
   letter-spacing: 0.13em;
   word-spacing: 0.2em;
@@ -156,7 +152,7 @@
     translate(1.75em, 7.2em);
 }
 
-.webstandards {
+.web-standards {
   font-weight: 300;
   letter-spacing: 0;
   word-spacing: -0.2em;
@@ -236,7 +232,7 @@
       translate(5.62em, 3.9em);
   }
 
-  .objectoriented {
+  .object-oriented {
     transform:
       scale(0.92, 0.95)
       translate(0.5em, 6.15em);
@@ -254,13 +250,13 @@
       translate(6.9em, 0.9em);
   }
 
-  .crossbrowser {
+  .cross-browser {
     transform:
       scale(1)
       translate(0.75em, 7.2em);
   }
 
-  .webstandards {
+  .web-standards {
     transform:
       scale(1)
       translate(11.7em, 8.8em);
