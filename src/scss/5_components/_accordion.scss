@@ -26,9 +26,9 @@
       width: 50px;
       float: left;
       
-      box-shadow: 0 0 25px 10px rgba(0,0,0,0.5);
-      -webkit-box-shadow: 0 0 25px 10px rgba(0,0,0,0.5);
-      -moz-box-shadow: 0 0 25px 10px rgba(0,0,0,0.5);
+      box-shadow: 0 0 25px 10px $shadow;
+      -webkit-box-shadow: 0 0 25px 10px $shadow;
+      -moz-box-shadow: 0 0 25px 10px $shadow;
       
       transition: all 0.5s;
       -webkit-transition: all 0.5s;
@@ -68,7 +68,7 @@
  
     a {
       display: block;
-      color: #fff;
+      color: $light-color;
       text-decoration: none;
       padding: 20px;
       font-size: 16px;
@@ -90,7 +90,6 @@
 
       img {
         padding: 10px;
-        /* filter: brightness(100); */
       }
     }
   }

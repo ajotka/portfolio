@@ -10,12 +10,12 @@
 }
 
 .heading.dark:after {
-	background: rgba(253, 123, 175, 1.0);
+	background: $pink;
 }
 
 .heading:after {
     content: '';
-    background: rgba(94, 199, 235, 0.65);
+    background: $blue;
     width: 100%;
     height: 10px;
     display: block;
@@ -38,5 +38,5 @@
 }
 
 .light .heading {
-    color: #000000;
+    color: $dark-color;
 }

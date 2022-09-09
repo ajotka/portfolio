@@ -19,14 +19,14 @@
         letter-spacing: 5px;
         margin-top: -15px;
         margin-bottom: 13px;
-        color: #ffffff;
+        color: $light-color;
         font-weight: 300;
-        text-shadow: #000 0 1px 1px, #000 0 -1px 1px;
+        text-shadow: $dark-color 0 1px 1px, $dark-color 0 -1px 1px;
         text-align: center;
     }
 
     &-subname {
-        color: #8d8d8d;
+        color: $subtext;
         margin-top: 9px;
         font-weight: normal;
         font-size: 12px;

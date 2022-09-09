@@ -1,7 +1,7 @@
 .about {
-    background: #fff;
+    background: $light-color;
     padding: 100px 0px 50px;
-    color: #000;
+    color: $dark-color;
     @include rwd(small) {
 		padding: 100px 0px 100px;
     }
@@ -10,7 +10,7 @@
 		width: 29%;
 	    position: relative;
 	    z-index: 1;
-	    box-shadow: 0px 0px 21px rgba(0,0,0,0.3);
+	    box-shadow: 0px 0px 21px rgba($dark-color, 0.3);
 	    background-color: #000;
 
 		&:before {
@@ -18,7 +18,7 @@
 		    position: absolute;
 		    right: 3%;
 		    bottom: 2%;
-		    border: 2px dotted rgba(255, 255, 255, 0.3);
+		    border: 2px dotted rgba($light-color, 0.3);
 		    height: 95%;
 		    width: 93%;
 		    z-index: 1;
@@ -26,7 +26,7 @@
 			@include rwd(small) {
 			    right: -45px;
 			    bottom: -45px;
-			    border: 2px dotted rgba(50, 50, 50, 0.3);
+			    border: 2px dotted $grey;
 			    height: 100%;
 			    width: 100%;
 			    z-index: -1;
