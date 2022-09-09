@@ -1,49 +1,48 @@
 .header__menu-button {
-    position: absolute;
-    top: 30px;
-    right: 15px;
-    @include rwd(small) {
-        top: 50px;
-        right: 40px;
-    }
-    z-index: 4;
-    width: 65px;
-    overflow: hidden;
-    cursor: pointer;
-    margin-top: -10px;
-    padding: 10px 0;
-    padding-right: 10px;
+  position: absolute;
+  top: 30px;
+  right: 15px;
 
-    .menu-button__line {
-        display: block;
-        height: 1px;
-        width: 100%;
-        background: $color-bg-light;
-        margin-top: 6px;
-        float: right;
-        clear: both;
-        -webkit-transition: all 150ms ease-out;
-        -moz-transition: all 150ms ease-out;
-        -ms-transition: all 150ms ease-out;
-        -o-transition: all 150ms ease-out;
-        transition: all 150ms ease-out;
+  @include rwd(small) {
+    top: 50px;
+    right: 40px;
+  }
 
-        &:first-child {
-            margin-top: 0;
-        }
-        &:nth-of-type(2) {
-            width: 35.38%;
-        }
-        &:nth-of-type(3) {
-            width: 81.53%;
-        }
-        &:nth-of-type(4) {
-            width: 63.07%;
-        }
+  z-index: 4;
+  width: 65px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: -10px;
+  padding: 10px 10px 10px 0;
+
+  .menu-button__line {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: $color-bg-light;
+    margin-top: 6px;
+    float: right;
+    clear: both;
+    transition: all 150ms ease-out;
+
+    &:first-child {
+      margin-top: 0;
     }
 
-    &:hover .menu-button__line {
-        width: 63.07%;
+    &:nth-of-type(2) {
+      width: 35.38%;
     }
 
+    &:nth-of-type(3) {
+      width: 81.53%;
+    }
+
+    &:nth-of-type(4) {
+      width: 63.07%;
+    }
+  }
+
+  &:hover .menu-button__line {
+    width: 63.07%;
+  }
 }

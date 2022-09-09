@@ -1,20 +1,23 @@
 .skills__list {
-	position: relative;
-	list-style: none;
-	padding: 0;
-	font-size: 125%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  font-size: 125%;
   text-transform: uppercase;
   color: $color-text-dark;
   width: 400px;
   height: 280px;
   margin: -30px auto 0;
   overflow: hidden;
+
   @media (max-width: 360px) {
     font-size: 110%;
   }
+
   @media (min-width: 361px) and (max-width: 420px) {
     font-size: 115%;
   }
+
   @include rwd(small) {
     width: 610px;
     height: 400px;
@@ -25,55 +28,55 @@
     position: absolute;
     top: 0;
     left: 0;
-    text-shadow: 0.5px 0.5px 0px rgba($color-text-dark, 0.15), 0.5px 0.5px 0px rgba($color-text-dark, 0.25);
+    text-shadow: 0.5px 0.5px 0 rgba($color-text-dark, 0.15), 0.5px 0.5px 0 rgba($color-text-dark, 0.25);
   }
 }
 
 .html5 {
   font-weight: 700;
-  letter-spacing: -.05em;
-  transform: 
+  letter-spacing: -0.05em;
+  transform:
     scale(7, 7)
-  	translate(1.3em, .68em);
-  -moz-transform: 
-    scale(6.5, 7) 
+    translate(1.3em, 0.68em);
+  transform:
+    scale(6.5, 7)
     translate(1.4em, 0.68em);
-  -apple-transform: 
-    scale(6.5, 7) 
+  transform:
+    scale(6.5, 7)
     translate(1.4em, 0.68em);
 }
 
 .javascript {
-  letter-spacing: -.04em;
+  letter-spacing: -0.04em;
   font-weight: 400;
-  transform: 
+  transform:
     scale(1.4)
     rotate(90deg)
     translate(4.5em, -14.3em);
 }
 
 .accessibility {
-  letter-spacing: -.05em;
+  letter-spacing: -0.05em;
   font-weight: 300;
-  transform: 
+  transform:
     scale(1.4, 1.33)
     rotate(90deg)
-    translate(4.1em, -18.0em);
+    translate(4.1em, -18em);
 }
 
 .responsive {
   font-weight: 300;
-  letter-spacing: -.03em;
-  word-spacing: .3em;
-  transform: 
+  letter-spacing: -0.03em;
+  word-spacing: 0.3em;
+  transform:
     scale(2.15)
     translate(2.75em, 4.15em);
 }
 
 .usability {
   font-weight: 400;
-  letter-spacing: -.04em;
-  transform: 
+  letter-spacing: -0.04em;
+  transform:
     scale(2.85, 3)
     translate(7.5em, 3.9em);
 }
@@ -81,49 +84,49 @@
 .ajax {
   letter-spacing: -0.01em;
   font-weight: 700;
-  transform: 
+  transform:
     scale(2.4, 2.3)
-	  rotate(90deg)
+    rotate(90deg)
     translate(5.65em, -5.75em);
-  -moz-transform: 
-    scale(1.8, 1.8) 
-    rotate(90deg) 
+  transform:
+    scale(1.8, 1.8)
+    rotate(90deg)
     translate(7.25em, -8em);
-  -apple-transform: 
-    scale(1.8, 1.8) 
-    rotate(90deg) 
+  transform:
+    scale(1.8, 1.8)
+    rotate(90deg)
     translate(7.25em, -8em);
 }
 
 .css3 {
-  letter-spacing: -.05em;
+  letter-spacing: -0.05em;
   font-weight: 700;
-  transform:  
-    scale(6.8, 6.75) 
-    rotate(90deg) 
+  transform:
+    scale(6.8, 6.75)
+    rotate(90deg)
     translate(1.35em, -5em);
-  -moz-transform: 
-    scale(5.8, 6.2) 
-    rotate(90deg) 
+  transform:
+    scale(5.8, 6.2)
+    rotate(90deg)
     translate(1.55em, -5.95em);
-  -apple-transform: 
-    scale(5.8, 6.2) 
-    rotate(90deg) 
+  transform:
+    scale(5.8, 6.2)
+    rotate(90deg)
     translate(1.55em, -5.95em);
 }
 
 .jquery {
   letter-spacing: 0.045em;
   font-weight: 700;
-  transform: 
+  transform:
     scale(3.88, 3.8)
     translate(5.62em, 3.9em);
 }
 
 .objectoriented {
   font-weight: 700;
-  letter-spacing: -.010em;
-  transform: 
+  letter-spacing: -0.01em;
+  transform:
     scale(1.85, 1.9)
     translate(1.75em, 6.15em);
 }
@@ -131,7 +134,7 @@
 .wordpress {
   font-weight: 300;
   letter-spacing: -0.05em;
-  transform: 
+  transform:
     scale(2.75, 3)
     translate(1.85em, 5.75em);
 }
@@ -139,141 +142,138 @@
 .seo {
   font-weight: 300;
   letter-spacing: -0.07em;
-  transform: 
+  transform:
     scale(3.9, 4)
-    translate(6.9em, .9em);
+    translate(6.9em, 0.9em);
 }
 
 .crossbrowser {
   font-weight: 300;
   letter-spacing: 0.13em;
-  word-spacing: .2em;
-  transform: 
-    scale(2) 
-  	translate(1.75em, 7.2em);
+  word-spacing: 0.2em;
+  transform:
+    scale(2)
+    translate(1.75em, 7.2em);
 }
 
 .webstandards {
   font-weight: 300;
-  letter-spacing: 0em;
-  word-spacing: -.2em;
-  transform: 
-    scale(2) 
-  	translate(12.7em, 8.8em);
+  letter-spacing: 0;
+  word-spacing: -0.2em;
+  transform:
+    scale(2)
+    translate(12.7em, 8.8em);
 }
 
 .jg {
-	color: $color-pink;
-	font-weight: 700;
-	letter-spacing: -.03em;
-	transform: 
-    scale(4.35) 
-		translate(6.2em, 1.8em);
+  color: $color-pink;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  transform:
+    scale(4.35)
+    translate(6.2em, 1.8em);
 }
 
 .skill {
   color: $color-blue;
   font-weight: 700;
-  letter-spacing: -.03em;
-  transform: 
+  letter-spacing: -0.03em;
+  transform:
     scale(1.8)
     translate(9.5em, 9.85em);
 }
 
-
-
-
 @include rwdmax(tablet) {
   .html5 {
-    transform: 
+    transform:
       scale(3.5, 3.5)
-      translate(1.3em, .68em);
+      translate(1.3em, 0.68em);
   }
 
   .javascript {
-    transform: 
+    transform:
       scale(0.7)
       rotate(90deg)
       translate(4.5em, -13em);
   }
 
   .accessibility {
-    transform: 
+    transform:
       scale(0.7, 0.66)
       rotate(90deg)
-      translate(4.1em, -18.0em);
+      translate(4.1em, -18em);
   }
 
   .responsive {
-    transform: 
+    transform:
       scale(1.07)
       translate(1em, 4.15em);
   }
 
   .usability {
-    transform: 
+    transform:
       scale(1.42, 1.5)
       translate(7.15em, 3.9em);
   }
 
   .ajax {
-    transform: 
-      scale(1.2, 1.2) 
-      rotate(90deg) 
-      translate(5.5em, -5.8em)
+    transform:
+      scale(1.2, 1.2)
+      rotate(90deg)
+      translate(5.5em, -5.8em);
   }
 
   .css3 {
-    transform:  
-      scale(3.4, 3.37) 
+    transform:
+      scale(3.4, 3.37)
       rotate(90deg)
       translate(1.35em, -5.1em);
   }
 
   .jquery {
-    transform: 
+    transform:
       scale(1.94, 1.9)
       translate(5.62em, 3.9em);
   }
 
   .objectoriented {
-    transform: 
+    transform:
       scale(0.92, 0.95)
       translate(0.5em, 6.15em);
   }
 
   .wordpress {
-    transform: 
+    transform:
       scale(1.37, 1.5)
       translate(1.35em, 5.75em);
   }
 
-  .seo {;
-    transform: 
+  .seo {
+    transform:
       scale(1.95, 2)
-      translate(6.9em, .9em);
+      translate(6.9em, 0.9em);
   }
 
   .crossbrowser {
-    transform: 
-      scale(1) 
+    transform:
+      scale(1)
       translate(0.75em, 7.2em);
   }
 
   .webstandards {
-    transform: 
-      scale(1) 
+    transform:
+      scale(1)
       translate(11.7em, 8.8em);
   }
 
   .jg {
-    transform: 
-      scale(2.17) 
+    transform:
+      scale(2.17)
       translate(6.2em, 1.8em);
   }
 
   .skill {
-    transform: 
+    transform:
       scale(0.9)
       translate(9.5em, 9.85em);
   }

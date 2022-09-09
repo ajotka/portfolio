@@ -1,13 +1,13 @@
 .separator {
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    overflow: hidden;
-    
-    svg {
-	fill: $color-bg-light;
-    }
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  overflow: hidden;
+
+  svg {
+    fill: $color-bg-light;
+  }
 }
 
 section.separate {
@@ -18,7 +18,7 @@ section.separate {
 }
 
 .diagonalseparator {
-	width: 100%;
+  width: 100%;
   position: relative;
   background: transparent;
   margin-top: 110px;
@@ -31,7 +31,7 @@ section.separate {
 }
 
 .diagonalseparator::before {
-  content: '';
+  content: "";
   position: absolute;
   pointer-events: none;
   top: -370%;
@@ -40,17 +40,12 @@ section.separate {
   width: 150%;
   height: 335%;
   background: $color-bg-light;
-  -webkit-transform: rotate(-4deg);
   transform: rotate(-4deg);
-  -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
 }
 
 .flip {
-	-moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
+  filter: fliph;
+  filter: "FlipH";
 }

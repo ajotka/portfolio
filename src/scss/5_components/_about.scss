@@ -1,51 +1,52 @@
 .about {
-    background: $color-bg-light;
-    padding: 100px 0px 50px;
-    color: $color-text-dark;
-    @include rwd(small) {
-		padding: 100px 0px 100px;
+  background: $color-bg-light;
+  padding: 100px 0 50px;
+  color: $color-text-dark;
+
+  @include rwd(small) {
+    padding: 100px 0;
+  }
+
+  &__portret {
+    width: 29%;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 21px rgba($color-bg-dark, 0.3);
+    background-color: $color-bg-dark;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 3%;
+      bottom: 2%;
+      border: 2px dotted rgba($color-bg-light, 0.3);
+      height: 95%;
+      width: 93%;
+      z-index: 1;
+
+      @include rwd(small) {
+        right: -45px;
+        bottom: -45px;
+        border: 2px dotted $color-grey;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+      }
     }
 
-	&__portret {
-		width: 29%;
-	    position: relative;
-	    z-index: 1;
-	    box-shadow: 0px 0px 21px rgba($color-bg-dark, 0.3);
-	    background-color: $color-bg-dark;
+    img {
+      overflow: hidden;
+      max-width: 100%;
+      margin-bottom: -3px;
+    }
+  }
 
-		&:before {
-		    content: '';
-		    position: absolute;
-		    right: 3%;
-		    bottom: 2%;
-		    border: 2px dotted rgba($color-bg-light, 0.3);
-		    height: 95%;
-		    width: 93%;
-		    z-index: 1;
+  &__content {
+    width: 55%;
+    margin-left: 16%;
 
-			@include rwd(small) {
-			    right: -45px;
-			    bottom: -45px;
-			    border: 2px dotted $color-grey;
-			    height: 100%;
-			    width: 100%;
-			    z-index: -1;
-			}
-		}
-
-		img {
-		    overflow: hidden;
-		    max-width: 100%;
-		    margin-bottom: -3px;
-		}
-	}
-
-	&__content {
-		width: 55%;
-		margin-left: 16%;
-
-	    @include rwdmax(tablet) {
-	        margin-top: 50px;
-	    }
-	}
+    @include rwdmax(tablet) {
+      margin-top: 50px;
+    }
+  }
 }

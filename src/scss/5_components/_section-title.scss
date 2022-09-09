@@ -1,10 +1,11 @@
 .section-title {
-	width: fit-content;
+  width: fit-content;
 }
 
 .skills .section-title {
-	@include rwd(small) {
-		margin: 0 20%;
-	}
-	padding: 0 15px;
+  @include rwd(small) {
+    margin: 0 20%;
+  }
+
+  padding: 0 15px;
 }

@@ -1,7 +1,8 @@
-.accordion {;
+.accordion {
   height: 400px;
   margin-bottom: 100px;
   float: right;
+
   @include rwdmax(small) {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -9,39 +10,40 @@
 
   ul {
     width: 2000px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
 
-    &:hover li{
+    &:hover li {
       width: 50px;
     }
 
     li {
       position: relative;
       display: block;
-      @include rwd(small) { 
+
+      @include rwd(small) {
         width: 75px;
       }
+
       width: 50px;
       float: left;
-      
       box-shadow: 0 0 25px 10px $shadow;
-      -webkit-box-shadow: 0 0 25px 10px $shadow;
-      -moz-box-shadow: 0 0 25px 10px $shadow;
-      
+      box-shadow: 0 0 25px 10px $shadow;
+      box-shadow: 0 0 25px 10px $shadow;
       transition: all 0.5s;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s;
-      
+      transition: all 0.5s;
+      transition: all 0.5s;
+
       img {
         display: block;
         height: 398px;
       }
-      
+
       &:hover {
         width: 300px;
-        @include rwd(small) { 
+
+        @include rwd(small) {
           width: 600px;
         }
       }
@@ -49,23 +51,25 @@
   }
 
   &__item-title {
-    background: rgba($color-bg-dark,0.75);
+    background: rgba($color-bg-dark, 0.75);
     position: absolute;
     left: -175px;
     top: 175px;
     height: 50px;
     line-height: 8px;
+
     @include rwd(small) {
       left: -160px;
       top: 160px;
       height: 80px;
       line-height: 45px;
     }
+
     width: 400px;
     font-weight: 400;
     letter-spacing: 2px;
     transform: rotate(90deg);
- 
+
     a {
       display: block;
       color: $color-text-light;
@@ -75,7 +79,6 @@
     }
   }
 
-
   &-introducing {
     display: inline-block;
 
@@ -84,6 +87,7 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+
       @include rwdmax(small) {
         margin-bottom: 20px;
       }
@@ -94,5 +98,3 @@
     }
   }
 }
-
-
