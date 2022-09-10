@@ -41,7 +41,7 @@
       }
     }
 
-    &:hover li {
+    &:hover li:not(:hover) {
       width: 50px;
     }
   }
