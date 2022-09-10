@@ -1,12 +1,12 @@
-.header {
-  &__logo {
+.logo {
     width: 350px;
     height: 350px;
     top: calc(50% - 175px);
     left: calc(50% - 175px);
     position: absolute;
 
-    &-image {
+    &__image {
+      display: block;
       object-fit: cover;
       position: relative;
       width: 200px;
@@ -15,7 +15,7 @@
       z-index: -1;
     }
 
-    &-name {
+    &__name {
       font-size: 2.8125em;
       letter-spacing: 5px;
       margin-top: -15px;
@@ -26,7 +26,7 @@
       text-align: center;
     }
 
-    &-subname {
+    &__subname {
       color: $color-subtext;
       margin-top: 9px;
       font-weight: $font-weight-normal;
@@ -36,4 +36,3 @@
       text-align: center;
     }
   }
-}

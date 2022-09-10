@@ -5,6 +5,18 @@
   width: 100%;
   overflow: hidden;
 
+  &--header {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    overflow: hidden;
+
+    svg {
+      fill: $color-bg-light;
+    }
+  }
+
   svg {
     fill: $color-bg-light;
   }
