@@ -35,7 +35,7 @@
 }
 
 .html5 {
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   letter-spacing: -0.05em;
   transform:
     scale(6.5, 7)
@@ -44,7 +44,7 @@
 
 .javascript {
   letter-spacing: -0.04em;
-  font-weight: 400;
+  font-weight: $font-weight-normal;
   transform:
     scale(1.4)
     rotate(90deg)
@@ -53,7 +53,7 @@
 
 .accessibility {
   letter-spacing: -0.05em;
-  font-weight: 300;
+  font-weight: $font-weight-light;
   transform:
     scale(1.4, 1.33)
     rotate(90deg)
@@ -61,7 +61,7 @@
 }
 
 .responsive {
-  font-weight: 300;
+  font-weight: $font-weight-light;
   letter-spacing: -0.03em;
   word-spacing: 0.3em;
   transform:
@@ -70,7 +70,7 @@
 }
 
 .usability {
-  font-weight: 400;
+  font-weight: $font-weight-normal;
   letter-spacing: -0.04em;
   transform:
     scale(2.85, 3)
@@ -79,7 +79,7 @@
 
 .ajax {
   letter-spacing: -0.01em;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   transform:
     scale(2.4, 2.3)
     rotate(90deg)
@@ -96,7 +96,7 @@
 
 .css3 {
   letter-spacing: -0.05em;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   transform:
     scale(6.8, 6.75)
     rotate(90deg)
@@ -113,14 +113,14 @@
 
 .jquery {
   letter-spacing: 0.045em;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   transform:
     scale(3.88, 3.8)
     translate(5.62em, 3.9em);
 }
 
 .object-oriented {
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   letter-spacing: -0.01em;
   transform:
     scale(1.85, 1.9)
@@ -128,7 +128,7 @@
 }
 
 .wordpress {
-  font-weight: 300;
+  font-weight: $font-weight-light;
   letter-spacing: -0.05em;
   transform:
     scale(2.75, 3)
@@ -136,7 +136,7 @@
 }
 
 .seo {
-  font-weight: 300;
+  font-weight: $font-weight-light;
   letter-spacing: -0.07em;
   transform:
     scale(3.9, 4)
@@ -144,7 +144,7 @@
 }
 
 .cross-browser {
-  font-weight: 300;
+  font-weight: $font-weight-light;
   letter-spacing: 0.13em;
   word-spacing: 0.2em;
   transform:
@@ -153,7 +153,7 @@
 }
 
 .web-standards {
-  font-weight: 300;
+  font-weight: $font-weight-light;
   letter-spacing: 0;
   word-spacing: -0.2em;
   transform:
@@ -163,7 +163,7 @@
 
 .jg {
   color: $color-pink;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   letter-spacing: -0.03em;
   transform:
     scale(4.35)
@@ -172,7 +172,7 @@
 
 .skill {
   color: $color-blue;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   letter-spacing: -0.03em;
   transform:
     scale(1.8)

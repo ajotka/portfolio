@@ -21,7 +21,7 @@
       margin-top: -15px;
       margin-bottom: 13px;
       color: $color-text-light;
-      font-weight: 300;
+      font-weight: $font-weight-light;
       text-shadow: $color-text-dark 0 1px 1px, $color-text-dark 0 -1px 1px;
       text-align: center;
     }
@@ -29,7 +29,7 @@
     &-subname {
       color: $color-subtext;
       margin-top: 9px;
-      font-weight: normal;
+      font-weight: $font-weight-normal;
       font-size: 12px;
       font-family: Lato, sans-serif;
       letter-spacing: 3px;
