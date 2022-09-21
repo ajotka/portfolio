@@ -1,38 +1,38 @@
 .logo {
-    width: 350px;
-    height: 350px;
-    top: calc(50% - 175px);
-    left: calc(50% - 175px);
-    position: absolute;
+  width: 350px;
+  height: 350px;
+  top: calc(50% - 175px);
+  left: calc(50% - 175px);
+  position: absolute;
 
-    &__image {
-      display: block;
-      object-fit: cover;
-      position: relative;
-      width: 200px;
-      height: 200px;
-      margin: 0 auto;
-      z-index: -1;
-    }
-
-    &__name {
-      font-size: 2.8125em;
-      letter-spacing: 5px;
-      margin-top: -15px;
-      margin-bottom: 13px;
-      color: $color-text-light;
-      font-weight: $font-weight-light;
-      text-shadow: $color-text-dark 0 1px 1px, $color-text-dark 0 -1px 1px;
-      text-align: center;
-    }
-
-    &__subname {
-      color: $color-subtext;
-      margin-top: 9px;
-      font-weight: $font-weight-normal;
-      font-size: $font-small;
-      font-family: Lato, sans-serif;
-      letter-spacing: 3px;
-      text-align: center;
-    }
+  &__image {
+    display: block;
+    object-fit: cover;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    z-index: -1;
   }
+
+  &__name {
+    font-size: 2.8125em;
+    letter-spacing: 5px;
+    margin-top: -15px;
+    margin-bottom: 13px;
+    color: $color-text-light;
+    font-weight: $font-weight-light;
+    text-shadow: $color-text-dark 0 1px 1px, $color-text-dark 0 -1px 1px;
+    text-align: center;
+  }
+
+  &__subname {
+    color: $color-subtext;
+    margin-top: 9px;
+    font-weight: $font-weight-normal;
+    font-size: $font-small;
+    font-family: Lato, sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+}

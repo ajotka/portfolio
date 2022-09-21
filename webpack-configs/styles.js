@@ -1,4 +1,5 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const magicImporter = require("node-sass-magic-importer");
 const postCSSImport = require('postcss-import');
 const cssnano = require('cssnano');
 const autoprefixer = require('autoprefixer');
@@ -8,6 +9,9 @@ function styles({ styles: stylesConfig }, mode) {
         loader: 'sass-loader',
         options: {
             sourceMap: true, // has to be true for font generator
+            sassOptions: {
+                importer: magicImporter()
+            }
         },
     };
     const autoprefixerLoader = stylesConfig.postcss ? {

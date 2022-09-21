@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import './icons';
 
 import Menu from './components/menu';
 import Roles from './components/roles';
