@@ -20,13 +20,14 @@
       ignore: ["blockless-at-rules"],
       ignoreAtRules: ["/^include/", "media"]
     }],
-    "selector-max-id": 0,
     "shorthand-property-no-redundant-values": true,
     "declaration-block-no-redundant-longhand-properties": true,
     "no-unknown-animations": true,
     "function-url-scheme-disallowed-list": ["ftp", "/^http/"],
+    "selector-class-pattern": "^(?:(?:o|c|u|t|s|is|has|_|js|qa)-)?[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*(?:__[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:--[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:\\[.+\\])?$",
+    "selector-max-id": 0,
     "selector-max-class": 3,
-    "selector-max-universal": 0,
+    "selector-max-universal": 1,
     "selector-max-type": [ 1, {
       ignore: ["child", "compounded", "descendant", "next-sibling"]
     }],

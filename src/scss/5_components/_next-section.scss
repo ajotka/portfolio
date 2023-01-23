@@ -21,18 +21,6 @@
     position: relative;
     text-decoration: none;
 
-    &::before {
-      content: "";
-      background-image: url("../../icons/angle-left.svg?inline&fill=#b1acac");
-      position: absolute;
-      bottom: -5px;
-      left: -20px;
-      width: 20px;
-      height: 20px;
-
-      // animation: secdownmoving 1000ms linear 0s infinite;
-    }
-
     &::after {
       content: "";
       background: $color-blue;

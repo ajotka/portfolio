@@ -2,6 +2,8 @@
 REM
 ------------------------------------------ */
 
+@use "sass:math";
+
 @function rem($pixels, $context: $font-pixels-base) {
   @if unitless($pixels) {
     $pixels: $pixels * 1px;
@@ -11,5 +13,5 @@ REM
     $context: $context * 1px;
   }
 
-  @return $pixels / $context * 1rem;
+  @return math.div($pixels, $context) * 1rem;
 }
