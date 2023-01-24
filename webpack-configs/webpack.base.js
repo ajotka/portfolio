@@ -1,4 +1,5 @@
 const IgnoreEmitPlugin = require('ignore-emit-webpack-plugin');
+const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
 
 const baseConfig = {
     module: {
@@ -24,7 +25,7 @@ const baseConfig = {
             //     loader: 'vue-loader',
             // },
             {
-                test: /\.(gif|png|jpe?g)$/i,
+                test: /\.(gif|png|webp|jpe?g)$/i,
                 use: [
                     {
                         loader: 'file-loader',
@@ -60,6 +61,7 @@ const baseConfig = {
     plugins: [
         // new VueLoaderPlugin()
         new IgnoreEmitPlugin(/\.map$/),
+        new ImageminWebpWebpackPlugin()
     ]
 };
 

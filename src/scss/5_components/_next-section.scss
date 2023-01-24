@@ -11,6 +11,12 @@
   z-index: 1;
   padding-left: 32px;
 
+  span {
+    display: inline-block;
+    transform: translate3d(0px, 0%, 0px);
+    transition: all 0.3s ease 0s;
+  }
+
   a {
     display: block;
     color: $color-text-light;

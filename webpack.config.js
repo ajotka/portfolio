@@ -2,6 +2,7 @@ const { merge } = require("webpack-merge");
 const path = require("path");
 const _ = require("lodash");
 const CopyPlugin = require('copy-webpack-plugin');
+const HtmlValidatePlugin = require('html-validate-webpack-plugin');
 
 // Configuration files
 const webpack_base = require("./webpack-configs/webpack.base");
@@ -45,6 +46,26 @@ function config(mode, userConfig) {
 
 module.exports = (env, argv) => {
     const mode = _.get(argv, 'mode', 'development');
+
+    const dynamicPlugins = [
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, 'src/img'),
+                    to: path.resolve(__dirname, 'public/img'),
+                },
+                {
+                    from: path.resolve(__dirname, 'src/public'),
+                    to: path.resolve(__dirname, 'public'),
+                },
+            ],
+        }),
+    ];
+
+    if (mode === 'development') {
+        dynamicPlugins.push(new HtmlValidatePlugin());
+    }
+
     return config(mode, {
         output: {
             path: path.resolve(__dirname, 'public'),
@@ -53,10 +74,7 @@ module.exports = (env, argv) => {
         },
 
         resolve: {
-            alias: {
-                vue$: 'vue/dist/vue.esm.js',
-            },
-            extensions: ['.web.js', '.mjs', '.js', '.json', '.jsx', '.vue'],
+            extensions: ['.js', '.json'],
             modules: [path.resolve(__dirname, 'src'), 'node_modules'],
         },
 
@@ -78,20 +96,7 @@ module.exports = (env, argv) => {
             rules: [],
         },
 
-        plugins: [
-            new CopyPlugin({
-                patterns: [
-                    {
-                        from: path.resolve(__dirname, 'src/img'),
-                        to: path.resolve(__dirname, 'public/img'),
-                    },
-                    {
-                        from: path.resolve(__dirname, 'src/public'),
-                        to: path.resolve(__dirname, 'public'),
-                    },
-                ],
-            }),
-        ],
+        plugins: dynamicPlugins,
 
     });
 }
